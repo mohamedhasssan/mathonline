@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long Division Practice</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <style>
+        /* Add custom CSS here */
+        .question {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .feedback {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Long Division Practice FOR AMINA</h1>
+        <!-- Add this div element to display the current date -->
+        <div id="currentDate"></div>
+
+        <hr>
+        <div id="questions">
+            <!-- Questions will be generated here -->
+        </div>
+        <button class="btn btn-primary" id="generatePdf">Generate PDF</button>
+
+    </div>
+
+    <!-- Include Bootstrap JavaScript and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        // Function to generate random long division questions
+        function generateQuestions() {
+            const questionsContainer = document.getElementById("questions");
+            questionsContainer.innerHTML = "";
+
+            for (let i = 1; i <= 10; i++) {
+                const answer = Math.floor(Math.random() * 1000) + 1;
+                const divisor = Math.floor(Math.random() * 50) + 1;
+                const dividend = answer * divisor; // Calculate answer
+
+                const questionHTML = `
+                    <div class="question">
+                        ${dividend} ÷ ${divisor} = 
+                        <input type="text" class="answer" data-answer="${answer}">
+                        <span class="feedback"></span>
+                    </div>
+                `;
+
+                questionsContainer.innerHTML += questionHTML;
+            }
+        }
+
+        // Function to check answers
+        function checkAnswers() {
+            const answerInputs = document.querySelectorAll(".answer");
+
+            answerInputs.forEach((input) => {
+                const userAnswer = parseFloat(input.value);
+                const correctAnswer = parseFloat(input.getAttribute("data-answer"));
+                const feedback = input.nextElementSibling;
+
+                if (!isNaN(userAnswer)) {
+                    if (userAnswer === correctAnswer) {
+                        feedback.textContent = "✔";
+                        feedback.style.color = "green";
+                    } else {
+                        feedback.textContent = "✘";
+                        feedback.style.color = "red";
+                    }
+                } else {
+                    feedback.textContent = "";
+                }
+            });
+        }
+
+        // Display the current date
+        function displayCurrentDate() {
+            const currentDateElement = document.getElementById("currentDate");
+            const currentDate = new Date();
+            currentDateElement.textContent = "Today's Date: " + currentDate.toDateString();
+        }
+
+        // Generate questions on page load and display the date
+        generateQuestions();
+        displayCurrentDate();
+        
+        // Attach event listener to check answers
+        document.querySelector("#questions").addEventListener("input", checkAnswers);
+
+        // Attach event listener to generate PDF button
+        document.querySelector("#generatePdf").addEventListener("click", () => {
+            // Open the browser's print dialog
+            window.print();
+        });
+    </script>
+</body>
+</html>
