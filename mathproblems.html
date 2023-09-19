@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algebra Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+        .question {
+            font-size: 24px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out;
+            width: 75%; /* Reduce question size to 75% of screen width */
+        }
+        .question-container {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .question-container:hover {
+            transform: scale(1.02);
+        }
+        .answer-feedback {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 24px;
+            transform-origin: center;
+            animation: scaleFeedback 0.3s ease-in-out;
+        }
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        .answer {
+            width: 50%; /* Reduce answer box size to 50% of screen width */
+            text-align: center;
+            padding: 10px 10px;
+            box-sizing: border-box;
+            margin: 8px 0;
+            font-size: 20px;
+            transition: border-color 0.3s ease-in-out;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        .answer:focus {
+            outline: none;
+            border-color: #007BFF;
+        }
+        .feedback-icons {
+            display: flex;
+            align-items: center;
+        }
+        .checkmark {
+            color: green;
+            margin-right: 5px;
+        }
+        .x-mark {
+            color: red;
+            margin-right: 5px;
+        }
+        #result {
+            font-size: 2em; /* Increase result size by 25% */
+            margin-top: 20px;
+        }
+        #print-button {
+            margin-top: 20px;
+        }
+        @keyframes scaleFeedback {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Algebra Quiz</h1>
+    <div id="quiz-container"></div>
+    <div id="result"></div>
+    <button id="print-button" class="btn btn-primary">Print</button>
+
+    <script>
+        // Your JavaScript code remains the same
+        let questions = []; // Array to store questions
+        let answeredCorrectly = getCookie("answeredCorrectly") || {}; // Object to track answered questions
+        let currentQuestions = []; // Array to store current questions
+
+        // Load questions from JSON file
+        fetch('algebra_problems.json')
+            .then(response => response.json())
+            .then(data => {
+                questions = data['Level 1']; // Change the level as needed
+                showNextQuestions();
+            })
+            .catch(error => console.error(error));
+
+        function showNextQuestions() {
+            if (questions.length === 0) {
+                document.querySelector('#quiz-container').innerHTML = '<p>No more questions.</p>';
+                calculateAndDisplayResult();
+                return;
+            }
+
+            currentQuestions = [];
+            for (let i = 0; i < 5; i++) {
+                if (questions.length === 0) break;
+
+                // Get a random question that hasn't been used or answered correctly
+                let randomIndex;
+                do {
+                    randomIndex = Math.floor(Math.random() * questions.length);
+                } while (answeredCorrectly[questions[randomIndex].id]);
+
+                currentQuestions.push(questions[randomIndex]);
+                questions.splice(randomIndex, 1);
+            }
+
+            // Display the questions
+            const quizContainer = document.querySelector('#quiz-container');
+            quizContainer.innerHTML = ''; // Clear previous questions
+            currentQuestions.forEach((question, index) => {
+                const questionDiv = document.createElement('div');
+                questionDiv.classList.add('question-container');
+                questionDiv.innerHTML = `
+                    <p class="question">${index + 1}. ${question.question}</p>
+                    <input type="text" class="answer" placeholder="Enter your answer">
+                    <div class="feedback-icons"></div>
+                `;
+                quizContainer.appendChild(questionDiv);
+
+                // Attach an input event listener to each answer input field
+                const answerInput = questionDiv.querySelector('.answer');
+                answerInput.addEventListener('input', () => checkAnswer(answerInput, question, questionDiv));
+            });
+        }
+
+        function checkAnswer(answerInput, question, questionDiv) {
+            const userAnswer = parseFloat(answerInput.value); // Convert user answer to a number
+            const feedbackIcons = questionDiv.querySelector('.feedback-icons');
+
+            if (!isNaN(userAnswer) && userAnswer === question.answer) { // Check if the user answer is a number and matches the correct answer
+                answeredCorrectly[question.id] = true;
+                setCookie("answeredCorrectly", JSON.stringify(answeredCorrectly), 30); // Store in cookie
+                feedbackIcons.innerHTML = '<span class="checkmark">✔</span>'; // Checkmark
+                feedbackIcons.firstChild.classList.add('correct');
+            } else {
+                feedbackIcons.innerHTML = '<span class="x-mark">✘</span>'; // X-mark
+                feedbackIcons.firstChild.classList.add('incorrect');
+            }
+        }
+
+        function calculateAndDisplayResult() {
+            const totalQuestions = Object.keys(answeredCorrectly).length;
+            const correctAnswers = Object.values(answeredCorrectly).filter(value => value === true).length;
+            const resultText = `You answered ${correctAnswers} out of ${totalQuestions} questions correctly.`;
+            document.querySelector('#result').textContent = resultText;
+        }
+
+        // Helper functions for managing cookies
+        function setCookie(name, value, days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            const expires = "expires=" + date.toUTCString();
+            document.cookie = name + "=" + value + "; " + expires + "; path=/";
+        }
+
+        function getCookie(name) {
+            const cookieName = name + "=";
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                let cookie = cookies[i];
+                while (cookie.charAt(0) === ' ') {
+                    cookie = cookie.substring(1);
+                }
+                if (cookie.indexOf(cookieName) === 0) {
+                    return JSON.parse(cookie.substring(cookieName.length, cookie.length));
+                }
+            }
+            return {};
+        }
+
+        // Print button functionality
+        const printButton = document.querySelector('#print-button');
+        printButton.addEventListener('click', () => window.print());
+    </script>
+</body>
+</html>

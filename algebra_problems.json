@@ -1,0 +1,714 @@
+{
+    "Level 1": [
+      
+
+      {
+        "id": 1,
+        "question": "John has 8 apples, and he gives 3 apples to his friend. How many apples does John have now?",
+        "answer": 5
+      },
+      {
+        "id": 2,
+        "question": "If you add 15 and 9, what is the result?",
+        "answer": 24
+      },
+      {
+        "id": 3,
+        "question": "Samantha wants to divide 36 candies equally among 4 friends. How many candies will each friend get?",
+        "answer": 9
+      },
+      {
+        "id": 4,
+        "question": "A rectangle has a length of 8 inches and a width of 5 inches. What is the area of the rectangle?",
+        "answer": 40
+      },
+      {
+        "id": 5,
+        "question": "If you roll a standard six-sided die, what is the probability of getting a 4?",
+        "answer": 0.1667
+      },
+      {
+        "id": 6,
+        "question": "Emma baked 24 cookies. She wants to share them equally among her 3 friends. How many cookies will each friend get?",
+        "answer": 8
+      },
+      {
+        "id": 7,
+        "question": "If you subtract 37 from 58, what is the result?",
+        "answer": 21
+      },
+      {
+        "id": 8,
+        "question": "A triangle has a base of 12 cm and a height of 8 cm. What is the area of the triangle?",
+        "answer": 48
+      },
+      {
+        "id": 9,
+        "question": "If you spin a spinner divided into 6 equal sections, what is the probability of landing on an even number?",
+        "answer": 0.5
+      },
+      {
+        "id": 10,
+        "question": "Liam wants to buy a toy that costs $15. He already has $8. How much more money does Liam need to buy the toy?",
+        "answer": 7
+      },
+      {
+        "id": 11,
+        "question": "A rope is 24 feet long. If you cut it into 3 equal pieces, how long is each piece of rope?",
+        "answer": 8
+      },
+      {
+        "id": 12,
+        "question": "If you have a square with a side length of 10 inches, what is the perimeter of the square?",
+        "answer": 40
+      },
+      {
+        "id": 13,
+        "question": "If you pick a card from a standard deck of 52 cards, what is the probability of drawing a heart?",
+        "answer": 0.25
+      },
+      {
+        "id": 14,
+        "question": "Emily wants to buy a book that costs $12. She has saved $6. How much more money does Emily need?",
+        "answer": 6
+      },
+      {
+        "id": 15,
+        "question": "There are 27 students in a class. If the students are divided into 3 equal groups, how many students are in each group?",
+        "answer": 9
+      },
+      {
+        "id": 16,
+        "question": "If you add 48 and 57, what is the result?",
+        "answer": 105
+      },
+      {
+        "id": 17,
+        "question": "A circle has a radius of 5 inches. What is the circumference of the circle?",
+        "answer": 31.42
+      },
+      {
+        "id": 18,
+        "question": "If you flip a coin, what is the probability of getting heads?",
+        "answer": 0.5
+      },
+      {
+        "id": 19,
+        "question": "Olivia wants to buy a bicycle that costs $150. She has saved $90. How much more money does Olivia need to buy the bicycle?",
+        "answer": 60
+      },
+      {
+        "id": 20,
+        "question": "A garden is 15 feet long and 10 feet wide. What is the area of the garden?",
+        "answer": 150
+      },
+      {
+        "id": 21,
+        "question": "If you have a jar with 12 marbles, and 3 of them are red, what is the probability of picking a red marble?",
+        "answer": 0.25
+      },
+      {
+        "id": 22,
+        "question": "Nathan wants to buy a video game that costs $30. He has saved $18. How much more money does Nathan need?",
+        "answer": 12
+      },
+      {
+        "id": 23,
+        "question": "A rectangular pool is 30 feet long and 10 feet wide. What is the perimeter of the pool?",
+        "answer": 80
+      },
+      {
+        "id": 24,
+        "question": "If you roll a fair six-sided die, what is the probability of rolling a 2?",
+        "answer": 0.1667
+      },
+      {
+        "id": 25,
+        "question": "Lucas has $25. He wants to buy a toy that costs $19. How much money will he have left after buying the toy?",
+        "answer": 6
+      },
+      {
+        "id": 26,
+        "question": "There are 45 pencils in a box. If they are divided into 5 equal groups, how many pencils are in each group?",
+        "answer": 9
+      },
+      {
+        "id": 27,
+        "question": "If you subtract 64 from 89, what is the result?",
+        "answer": 25
+      },
+      {
+        "id": 28,
+        "question": "A triangle has a base of 6 inches and a height of 10 inches. What is the area of the triangle?",
+        "answer": 30
+      },
+      {
+        "id": 29,
+        "question": "If you draw a card from a standard deck of 52 cards, what is the probability of drawing a diamond?",
+        "answer": 0.25
+      },
+      {
+        "id": 30,
+        "question": "Sophia wants to buy a dress that costs $50. She already has $28. How much more money does Sophia need to buy the dress?",
+        "answer": 22
+      },
+      {
+        "id": 31,
+        "question": "A square garden has a perimeter of 36 feet. What is the length of each side of the garden?",
+        "answer": 9
+      },
+      {
+        "id": 32,
+        "question": "If you add 86 and 95, what is the result?",
+        "answer": 181
+      },
+      {
+        "id": 33,
+        "question": "A circle has a diameter of 12 inches. What is the circumference of the circle?",
+        "answer": 37.7
+      },
+      {
+        "id": 34,
+        "question": "If you flip a coin, what is the probability of getting tails?",
+        "answer": 0.5
+      },
+      {
+        "id": 35,
+        "question": "Ella wants to buy a skateboard that costs $75. She has saved $45. How much more money does Ella need?",
+        "answer": 30
+      },
+      {
+        "id": 36,
+        "question": "A rectangular room is 18 feet long and 12 feet wide. What is the area of the room?",
+        "answer": 216
+      },
+      {
+        "id": 37,
+        "question": "If you have a jar with 15 marbles, and 5 of them are blue, what is the probability of picking a blue marble?",
+        "answer": 0.3333
+      },
+      {
+        "id": 38,
+        "question": "Daniel wants to buy a video game that costs $40. He has saved $28. How much more money does Daniel need?",
+        "answer": 12
+      },
+      {
+        "id": 39,
+        "question": "A rectangular pool is 30 feet long and 10 feet wide. What is the perimeter of the pool?",
+        "answer": 80
+      },
+      {
+        "id": 40,
+        "question": "If you roll a fair six-sided die, what is the probability of rolling a 5?",
+        "answer": 0.1667
+      },
+      {
+        "id": 41,
+        "question": "Mia has $40. She wants to buy a bicycle that costs $60. How much more money does Mia need?",
+        "answer": 20
+      },
+      {
+        "id": 42,
+        "question": "There are 63 books in a library. If they are divided into 7 equal shelves, how many books are on each shelf?",
+        "answer": 9
+      },
+      {
+        "id": 43,
+        "question": "If you subtract 73 from 98, what is the result?",
+        "answer": 25
+      },
+      {
+        "id": 44,
+        "question": "A triangle has a base of 9 inches and a height of 6 inches. What is the area of the triangle?",
+        "answer": 27
+      },
+      {
+        "id": 45,
+        "question": "If you draw a card from a standard deck of 52 cards, what is the probability of drawing a spade?",
+        "answer": 0.25
+      },
+      {
+        "id": 46,
+        "question": "Nolan wants to buy a skateboard that costs $80. He has saved $45. How much more money does Nolan need?",
+        "answer": 35
+      },
+      {
+        "id": 47,
+        "question": "A square garden has an area of 64 square feet. What is the length of each side of the garden?",
+        "answer": 8
+      },
+      {
+        "id": 48,
+        "question": "If you add 57 and 68, what is the result?",
+        "answer": 125
+      },
+      {
+        "id": 49,
+        "question": "A circle has a radius of 7 inches. What is the circumference of the circle?",
+        "answer": 43.96
+      },
+      {
+        "id": 50,
+        "question": "If you flip a coin, what is the probability of getting heads?",
+        "answer": 0.5
+      },
+
+
+      {
+        "id": 51,
+        "question": "Sarah has 3 times as many marbles as Jake. Jake has 12 marbles. How many marbles does Sarah have?",
+        "answer": 36.0
+      },
+      {
+        "id": 52,
+        "question": "If you add 1/3 to 2/5, what is the result in decimal form?",
+        "answer": 0.7333
+      },
+      {
+        "id": 53,
+        "question": "A car travels at a speed of 60 miles per hour. How far will it travel in 3 hours?",
+        "answer": 180.0
+      },
+      {
+        "id": 54,
+        "question": "A rectangular garden is 24 feet long and 18 feet wide. What is the perimeter of the garden?",
+        "answer": 84.0
+      },
+      {
+        "id": 55,
+        "question": "If you spin a spinner with 4 equal sections numbered 1 through 4, what is the probability of landing on a multiple of 2?",
+        "answer": 0.5
+      },
+      {
+        "id": 56,
+        "question": "Grace wants to distribute 45 candies equally among 9 friends. How many candies will each friend get?",
+        "answer": 5.0
+      },
+      {
+        "id": 57,
+        "question": "If you subtract 4/5 from 1, what is the result in decimal form?",
+        "answer": 0.2
+      },
+      {
+        "id": 58,
+        "question": "A parallelogram has a base of 10 inches and a height of 8 inches. What is the area of the parallelogram?",
+        "answer": 80.0
+      },
+      {
+        "id": 59,
+        "question": "If you draw a card from a standard deck of 52 cards, what is the probability of drawing a red card?",
+        "answer": 0.5
+      },
+      {
+        "id": 60,
+        "question": "Ethan wants to buy a video game that costs $45. He has saved $28. How much more money does Ethan need?",
+        "answer": 17.0
+      },
+      {
+        "id": 61,
+        "question": "A triangular garden has sides of lengths 15 feet, 20 feet, and 25 feet. Is this a right triangle?",
+        "answer": "Yes"
+      },
+      {
+        "id": 62,
+        "question": "If you add 2/3 and 3/4, what is the result in decimal form?",
+        "answer": 1.4167
+      },
+      {
+        "id": 63,
+        "question": "A train travels 360 miles in 6 hours. What is the speed of the train in miles per hour?",
+        "answer": 60.0
+      },
+      {
+        "id": 64,
+        "question": "A circular swimming pool has a radius of 9 feet. What is the area of the pool?",
+        "answer": 254.34
+      },
+      {
+        "id": 65,
+        "question": "If you flip a coin 3 times, what is the probability of getting at least 1 head?",
+        "answer": 0.875
+      },
+      {
+        "id": 66,
+        "question": "Sophie wants to distribute 56 cookies equally among 7 friends. How many cookies will each friend get?",
+        "answer": 8.0
+      },
+      {
+        "id": 67,
+        "question": "If you subtract 3/4 from 2, what is the result in decimal form?",
+        "answer": 1.25
+      },
+      {
+        "id": 68,
+        "question": "A rectangular room is 30 feet long and 15 feet wide. What is the area of the room?",
+        "answer": 450.0
+      },
+      {
+        "id": 69,
+        "question": "If you roll a fair six-sided die, what is the probability of rolling a number greater than 3?",
+        "answer": 0.5
+      },
+      {
+        "id": 70,
+        "question": "Nathan wants to buy a bicycle that costs $120. He has saved $75. How much more money does Nathan need?",
+        "answer": 45.0
+      },
+      {
+        "id": 71,
+        "question": "A square garden has an area of 144 square feet. What is the length of each side of the garden?",
+        "answer": 12.0
+      },
+      {
+        "id": 72,
+        "question": "If you add 3/8 and 5/6, what is the result in decimal form?",
+        "answer": 1.4167
+      },
+      {
+        "id": 73,
+        "question": "A cylindrical container has a radius of 6 inches and a height of 10 inches. What is the volume of the container?",
+        "answer": 1130.97
+      },
+      {
+        "id": 74,
+        "question": "If you flip a coin, what is the probability of getting 3 heads in a row?",
+        "answer": 0.125
+      },
+      {
+        "id": 75,
+        "question": "Liam wants to distribute 64 candies equally among 8 friends. How many candies will each friend get?",
+        "answer": 8.0
+      },
+      {
+        "id": 76,
+        "question": "If you subtract 5/6 from 4/5, what is the result in decimal form?",
+        "answer": -0.0167
+      },
+      {
+        "id": 77,
+        "question": "A triangular prism has a base with sides of length 6 inches, 8 inches, and 10 inches. What is the volume of the prism?",
+        "answer": 240.0
+      },
+      {
+        "id": 78,
+        "question": "If you draw a card from a standard deck of 52 cards, what is the probability of drawing a face card (jack, queen, or king) in decimal form?",
+        "answer": 0.2308
+      },
+      {
+        "id": 79,
+        "question": "Olivia wants to buy a dress that costs $75. She has saved $48. How much more money does Olivia need?",
+        "answer": 27.0
+      },
+      {
+        "id": 80,
+        "question": "A rectangular box has dimensions of 15 inches by 8 inches by 6 inches. What is the volume of the box?",
+        "answer": 720.0
+      },
+      {
+        "id": 81,
+        "question": "If you roll a fair six-sided die, what is the probability of rolling a number less than 4?",
+        "answer": 0.5
+      },
+      {
+        "id": 82,
+        "question": "Grace wants to distribute 90 candies equally among 6 friends. How many candies will each friend get?",
+        "answer": 15.0
+      },
+      {
+        "id": 83,
+        "question": "If you subtract 7/8 from 2, what is the result in decimal form?",
+        "answer": 1.125
+      },
+      {
+        "id": 84,
+        "question": "A circular pizza has a radius of 12 inches. What is the area of the pizza?",
+        "answer": 452.39
+      },
+      {
+        "id": 85,
+        "question": "If you flip a coin 4 times, what is the probability of getting exactly 2 tails?",
+        "answer": 0.375
+      },
+      {
+        "id": 86,
+        "question": "Ella wants to distribute 75 cookies equally among 5 friends. How many cookies will each friend get?",
+        "answer": 15.0
+      },
+      {
+        "id": 87,
+        "question": "If you add 4/7 and 3/5, what is the result in decimal form?",
+        "answer": 1.0571
+      },
+      {
+        "id": 88,
+        "question": "A triangular pyramid has a base with sides of length 8 inches, 15 inches, and 17 inches. What is the volume of the pyramid?",
+        "answer": 480.0
+      },
+      {
+        "id": 89,
+        "question": "If you draw a card from a standard deck of 52 cards, what is the probability of drawing a black card?",
+        "answer": 0.5
+      },
+      {
+        "id": 90,
+        "question": "Daniel wants to buy a laptop that costs $800. He has saved $620. How much more money does Daniel need?",
+        "answer": 180.0
+      },
+      {
+        "id": 91,
+        "question": "A rectangular room is 40 feet long and 20 feet wide. What is the area of the room?",
+        "answer": 800.0
+      },
+      {
+        "id": 92,
+        "question": "If you roll a fair six-sided die, what is the probability of rolling a prime number?",
+        "answer": 0.5
+      },
+      {
+        "id": 93,
+        "question": "Sophia wants to distribute 100 pencils equally among 10 friends. How many pencils will each friend get?",
+        "answer": 10.0
+      },
+      {
+        "id": 94,
+        "question": "If you subtract 5/6 from 4/5, what is the result in decimal form?",
+        "answer": -0.0333
+      },
+      {
+        "id": 95,
+        "question": "A cylindrical tank has a radius of 8 feet and a height of 12 feet. What is the volume of the tank?",
+        "answer": 2419.7
+      },
+      {
+        "id": 96,
+        "question": "If you flip a coin 5 times, what is the probability of getting at least 3 heads?",
+        "answer": 0.9688
+      },
+      {
+        "id": 97,
+        "question": "Liam wants to distribute 120 candies equally among 6 friends. How many candies will each friend get?",
+        "answer": 20.0
+      },
+      {
+        "id": 98,
+        "question": "If you add 3/4 and 2/3, what is the result in decimal form?",
+        "answer": 1.25
+      },
+      {
+        "id": 99,
+        "question": "A rectangular box has dimensions of 15 inches by 8 inches by 6 inches. What is the volume of the box?",
+        "answer": 720.0
+      },
+      {
+        "id": 100,
+        "question": "If you roll a fair six-sided die, what is the probability of rolling a number less than 4?",
+        "answer": 0.5
+      },
+
+      {
+        "id": 151,
+        "question": "Sarah is 4 years older than Tom. The sum of their ages is 30. How old is Sarah?",
+        "answer": 17
+      },
+      {
+        "id": 152,
+        "question": "A store is having a sale. A shirt originally costs $24, but it's on sale for 20% off. How much does the shirt cost during the sale?",
+        "answer": 19.20
+      },
+      {
+        "id": 153,
+        "question": "Emma has twice as many marbles as Liam. If Liam has 12 marbles, how many marbles does Emma have?",
+        "answer": 24
+      },
+      {
+        "id": 154,
+        "question": "A bakery sells 3 types of cupcakes: chocolate, vanilla, and strawberry. If they sell 24 cupcakes in total and 1/4 of them are chocolate, how many chocolate cupcakes did they sell?",
+        "answer": 6
+      },
+      {
+        "id": 155,
+        "question": "Jacob saved $120 in January, which is $40 more than what he saved in December. How much did he save in December?",
+        "answer": 80
+      },
+      {
+        "id": 156,
+        "question": "A garden has twice as many roses as tulips. If there are 18 tulips in the garden, how many roses are there?",
+        "answer": 36
+      },
+      {
+        "id": 157,
+        "question": "Sophia is going on a road trip. She drove 240 miles in the morning and 180 miles in the afternoon. How many miles did she drive in total?",
+        "answer": 420
+      },
+      {
+        "id": 158,
+        "question": "A book originally costs $36, but it's on sale for 25% off. How much does the book cost during the sale?",
+        "answer": 27
+      },
+      {
+        "id": 159,
+        "question": "Anna has 3 times as many books as Bella. If Bella has 15 books, how many books does Anna have?",
+        "answer": 45
+      },
+      {
+        "id": 160,
+        "question": "A pizza is divided into 8 equal slices. If 3/4 of the pizza is left, how many slices are left?",
+        "answer": 6
+      },
+      {
+        "id": 161,
+        "question": "Lucas has $180. He wants to buy a video game that costs $45. How much money will he have left after buying the game?",
+        "answer": 135
+      },
+      {
+        "id": 162,
+        "question": "A classroom has 36 students. If 1/3 of the students are absent today, how many students are present?",
+        "answer": 24
+      },
+      {
+        "id": 163,
+        "question": "Emily is saving money for a bike. She saves $10 per week. How many weeks will it take her to save $120?",
+        "answer": 12
+      },
+      {
+        "id": 164,
+        "question": "A box contains 24 red balls and 36 blue balls. What is the ratio of red balls to blue balls?",
+        "answer": "4:6"
+      },
+      {
+        "id": 165,
+        "question": "Nathan has twice as much money as Ethan. If Ethan has $25, how much money does Nathan have?",
+        "answer": 50
+      },
+      {
+        "id": 166,
+        "question": "A toy store has 60 stuffed animals. If they sell 3/5 of them, how many stuffed animals are left?",
+        "answer": 24
+      },
+      {
+        "id": 167,
+        "question": "There are 45 students in a class. If 1/4 of them are boys, how many girls are in the class?",
+        "answer": 33
+      },
+      {
+        "id": 168,
+        "question": "Liam is 3 years older than Mia. If Mia is 10 years old, how old is Liam?",
+        "answer": 13
+      },
+      {
+        "id": 169,
+        "question": "A bakery sold 180 cupcakes on Saturday and 240 cupcakes on Sunday. How many cupcakes did they sell over the weekend?",
+        "answer": 420
+      },
+      {
+        "id": 170,
+        "question": "A train travels at a speed of 60 miles per hour. How far will it travel in 2.5 hours?",
+        "answer": 150
+      },
+      {
+        "id": 171,
+        "question": "A box of chocolates contains 30 chocolates. If 2/3 of them are dark chocolates, how many are milk chocolates?",
+        "answer": 10
+      },
+      {
+        "id": 172,
+        "question": "A restaurant bill is $75. If a group of friends wants to leave a 15% tip, how much is the tip?",
+        "answer": 11.25
+      },
+      {
+        "id": 173,
+        "question": "A rectangular garden has a length of 16 feet and a width of 10 feet. What is the area of the garden?",
+        "answer": 160
+      },
+      {
+        "id": 174,
+        "question": "There are 48 students in a classroom. If 3/8 of them are girls, how many boys are in the classroom?",
+        "answer": 30
+      },
+      {
+        "id": 175,
+        "question": "A car travels at a speed of 50 miles per hour. How long will it take to travel 200 miles?",
+        "answer": 4
+      },
+      {
+        "id": 176,
+        "question": "A store sells 24 laptops, and 1/6 of them are MacBooks. How many MacBooks are sold?",
+        "answer": 4
+      },
+      {
+        "id": 177,
+        "question": "A box contains 60 colored pencils. If 3/5 of them are red, how many are not red?",
+        "answer": 24
+      },
+      {
+        "id": 178,
+        "question": "Mia is saving money for a concert ticket. She has saved $80, which is 2/5 of the ticket price. How much is the ticket?",
+        "answer": 200
+      },
+      {
+        "id": 179,
+        "question": "A rectangular room is 24 feet long and 12 feet wide. What is the perimeter of the room?",
+        "answer": 72
+      },
+      {
+        "id": 180,
+        "question": "A basket contains 36 apples, and 1/4 of them are Granny Smith apples. How many Granny Smith apples are there?",
+        "answer": 9
+      },
+      {
+        "id": 181,
+        "question": "Daniel is twice as tall as Lisa. If Lisa is 54 inches tall, how tall is Daniel in feet?",
+        "answer": 9
+      },
+      {
+        "id": 182,
+        "question": "A store sells 48 backpacks, and 3/8 of them are blue. How many blue backpacks are sold?",
+        "answer": 18
+      },
+      {
+        "id": 183,
+        "question": "A rectangular box has dimensions of 18 inches by 9 inches by 6 inches. What is the volume of the box in cubic inches?",
+        "answer": 972
+      },
+      {
+        "id": 184,
+        "question": "A school has 120 students, and 3/10 of them are in the chess club. How many students are in the chess club?",
+        "answer": 36
+      },
+      {
+        "id": 185,
+        "question": "Lucas wants to buy a computer that costs $800. He has saved $600. How much more money does Lucas need?",
+        "answer": 200
+      },
+      {
+        "id": 186,
+        "question": "A rectangular pool is 40 feet long and 20 feet wide. What is the area of the pool in square feet?",
+        "answer": 800
+      },
+      {
+        "id": 187,
+        "question": "A store is offering a 30% discount on a $120 jacket. How much is the discount?",
+        "answer": 36
+      },
+      {
+        "id": 188,
+        "question": "A recipe calls for 2/3 cup of sugar. If you want to make half the recipe, how much sugar do you need?",
+        "answer": "1/3 cup"
+      },
+      {
+        "id": 189,
+        "question": "A rectangular garden has a perimeter of 60 feet and a width of 10 feet. What is the length of the garden?",
+        "answer": 20
+      },
+      {
+        "id": 190,
+        "question": "A store sells 36 televisions, and 1/5 of them are smart TVs. How many smart TVs are sold?",
+        "answer": 7
+      }
+
+
+
+
+    ]
+  }
+  
