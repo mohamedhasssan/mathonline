@@ -1,0 +1,60 @@
+<!-- Add jQuery and Bootstrap libraries to your HTML -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Game</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <!-- Apply styles to headings using class "header" -->
+                <h1 class="header">Multiplication Game</h1>
+                <div id="question" class="mt-4">
+                    <span id="num1"></span> &times; <span id="num2"></span> =
+                    <input type="text" id="answer" class="form-control" />
+                </div>
+                <div class="mt-3">
+                    <button id="checkAnswer" class="btn btn-primary">Check Answer</button>
+                </div>
+                <!-- Display the timer -->
+                <div class="mt-3">
+                    <p>Time: <span id="timer">0 seconds</span></p>
+                </div>
+                <!-- Display the result -->
+                <div class="mt-3">
+                    <p>Result: <span id="result"></span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card1">
+                <button id="endGame" class="btn btn-danger">End Game</button>
+            </div>
+        </div>
+
+        <div id="resultsTable" class="mt-4">
+            <!-- Table will be displayed here -->
+            
+        </div>
+
+        <div class="mt-4">
+            <button id="saveResults" class="btn btn-success">Save Results as JSON</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="multiply.js"></script>
+</body>
+</html>
